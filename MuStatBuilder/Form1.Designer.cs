@@ -68,6 +68,7 @@
             bKUN.TabIndex = 1;
             bKUN.Text = "Kundun";
             bKUN.UseVisualStyleBackColor = true;
+            bKUN.Click += bKUN_Click;
             // 
             // bGC
             // 
@@ -77,6 +78,7 @@
             bGC.TabIndex = 2;
             bGC.Text = "Gun Crusher";
             bGC.UseVisualStyleBackColor = true;
+            bGC.Click += bGC_Click;
             // 
             // bSLA
             // 
@@ -86,6 +88,7 @@
             bSLA.TabIndex = 3;
             bSLA.Text = "Slayer";
             bSLA.UseVisualStyleBackColor = true;
+            bSLA.Click += bSLA_Click;
             // 
             // bRW
             // 
@@ -95,6 +98,7 @@
             bRW.TabIndex = 4;
             bRW.Text = "Rune Wizard";
             bRW.UseVisualStyleBackColor = true;
+            bRW.Click += bRW_Click;
             // 
             // bGL
             // 
@@ -104,6 +108,7 @@
             bGL.TabIndex = 5;
             bGL.Text = "Grow Lancer";
             bGL.UseVisualStyleBackColor = true;
+            bGL.Click += bGL_Click;
             // 
             // bRF
             // 
@@ -113,6 +118,7 @@
             bRF.TabIndex = 6;
             bRF.Text = "Rage Fighter";
             bRF.UseVisualStyleBackColor = true;
+            bRF.Click += bRF_Click;
             // 
             // bSUM
             // 
@@ -122,6 +128,7 @@
             bSUM.TabIndex = 7;
             bSUM.Text = "Summoner";
             bSUM.UseVisualStyleBackColor = true;
+            bSUM.Click += bSUM_Click;
             // 
             // bDL
             // 
@@ -171,6 +178,7 @@
             bLEM.TabIndex = 12;
             bLEM.Text = "Lemuria";
             bLEM.UseVisualStyleBackColor = true;
+            bLEM.Click += bLEM_Click;
             // 
             // bIK
             // 
@@ -180,6 +188,7 @@
             bIK.TabIndex = 13;
             bIK.Text = "Illusion Knight";
             bIK.UseVisualStyleBackColor = true;
+            bIK.Click += bIK_Click;
             // 
             // bALC
             // 
@@ -189,6 +198,7 @@
             bALC.TabIndex = 14;
             bALC.Text = "Alchemist";
             bALC.UseVisualStyleBackColor = true;
+            bALC.Click += bALC_Click;
             // 
             // textStats
             // 
@@ -199,7 +209,6 @@
             textStats.Size = new Size(115, 25);
             textStats.TabIndex = 15;
             textStats.TextAlign = HorizontalAlignment.Center;
-            textStats.TextChanged += textStats_TextChanged;
             textStats.KeyPress += textStats_KeyPress;
             // 
             // consoleText

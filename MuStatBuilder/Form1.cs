@@ -8,7 +8,6 @@ namespace MuStatBuilder
     public partial class Window : Form
     {
         private CharactersList _charactersList;
-        public double stats;
 
         // Cosas a hacer al inicializar la ventana principal
         public Window()
@@ -95,39 +94,66 @@ namespace MuStatBuilder
         // Obtener el personaje "Dark Knight"
         private void bDK_Click(object sender, EventArgs e)
         {
-            if (textStats.Text != "")
-            {
-                stats = double.Parse(textStats.Text);
-                DisplayCharacterInfo("Dark Knight", stats);
-            }
-            else 
+            if (textStats.Text == "")
             {
                 MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
             }
+            double stats = double.Parse(textStats.Text);
+            DisplayCharacterInfo("Dark Knight", stats);
         }
 
+        // Obtener el personaje "Dark Wizard"
         private void bDW_Click(object sender, EventArgs e)
         {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
             DisplayCharacterInfo("Dark Wizard", stats);
         }
 
+        // Obtener el personaje "Fairy Elf"
         private void bFE_Click(object sender, EventArgs e)
         {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
             DisplayCharacterInfo("Fairy Elf", stats);
         }
 
+        // Obtener el personaje "Magic Gladiator"
         private void bMG_Click(object sender, EventArgs e)
         {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
             DisplayCharacterInfo("Magic Gladiator", stats);
         }
 
+        // Obtener el personaje "Dark Lord"
         private void bDL_Click(object sender, EventArgs e)
         {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
             DisplayCharacterInfo("Dark Lord", stats);
-        }
-
-        private void textStats_TextChanged(object sender, EventArgs e)
-        {
         }
 
         //Valida que solo se ingresen numeros en el TextBox
@@ -138,6 +164,136 @@ namespace MuStatBuilder
             {
                 e.Handled = true; // Cancela la entrada del carácter
             }
+        }
+
+        // Obtener el personaje "Summoner"
+        private void bSUM_Click(object sender, EventArgs e)
+        {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
+            DisplayCharacterInfo("Summoner", stats);
+        }
+
+        // Obtener el personaje "Rage Fighter"
+        private void bRF_Click(object sender, EventArgs e)
+        {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
+            DisplayCharacterInfo("Rage Fighter", stats);
+        }
+
+        // Obtener el personaje "Grow Lancer"
+        private void bGL_Click(object sender, EventArgs e)
+        {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
+            DisplayCharacterInfo("Grow Lancer", stats);
+        }
+
+        // Obtener el personaje "Rune Wizard"
+        private void bRW_Click(object sender, EventArgs e)
+        {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
+            DisplayCharacterInfo("Rune Wizard", stats);
+        }
+
+        // Obtener el personaje "Slayer"
+        private void bSLA_Click(object sender, EventArgs e)
+        {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
+            DisplayCharacterInfo("Slayer", stats);
+        }
+
+        // Obtener el personaje "Gun Crusher"
+        private void bGC_Click(object sender, EventArgs e)
+        {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
+            DisplayCharacterInfo("Gun Crusher", stats);
+        }
+
+        // Obtener el personaje "Kundun"
+        private void bKUN_Click(object sender, EventArgs e)
+        {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
+            DisplayCharacterInfo("Kundun", stats);
+        }
+
+        // Obtener el personaje "Lemuria"
+        private void bLEM_Click(object sender, EventArgs e)
+        {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
+            DisplayCharacterInfo("Lemuria", stats);
+        }
+
+        // Obtener el personaje "Illusion Knight"
+        private void bIK_Click(object sender, EventArgs e)
+        {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
+            DisplayCharacterInfo("Illusion Knight", stats);
+        }
+
+        // Obtener el personaje "Alchemist"
+        private void bALC_Click(object sender, EventArgs e)
+        {
+            if (textStats.Text == "")
+            {
+                MessageBox.Show("Stats is empty", "Error");
+                textStats.Focus();
+                return;
+            }
+            double stats = double.Parse(textStats.Text);
+            DisplayCharacterInfo("Alchemist", stats);
         }
     }
 }
